@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css2?family=Danfo&display=swap,https://fonts.googleapis.com/css2?family=Tiny5&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px rgb(255, 255, 255) dotted;
+}
+
+.body, html {
+    height: 300vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.home{
+    font-family: "Tiny5";
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

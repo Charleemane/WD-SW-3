@@ -4,16 +4,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
     /*outline: 1px rgb(0, 0, 0) dotted;*/
     a {
         text-decoration: none;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        color: black;
     }
 }
 
 body, html {
     height: 100vh;
+    background-color: rgb(25, 25, 25);
 }
 
 
@@ -55,8 +55,6 @@ body, html {
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-        top: 30%;
-        left: 50%;
         
         &:hover {
             filter: drop-shadow(-25px 8px 23px #e4c92f);
@@ -66,7 +64,7 @@ body, html {
             padding: 16px;
 
             h1 {
-                color: rgb(0, 0, 0);
+                color: rgb(193, 193, 193);
                 font-size: 16px;
                 font-family: "Tiny5";
                 margin-bottom: 8px;
