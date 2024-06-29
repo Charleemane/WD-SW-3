@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px rgb(255, 255, 255) dotted;
+    outline: 2px rgb(255, 255, 255) dotted;
 }
 
 .body, html {
@@ -40,50 +40,59 @@
     width: auto;
     height: 20vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to left, #13690e8a, #e438a5f2);
 
     .static-h1 {
-        width: auto;
+        width: 800px;
         height: 120px;
+        position: relative;
         
         .archer {
             position: absolute;
-            left: 60%;
-            top: 18%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 70%;
             width: 90px;
             height: 80px;
         }
         
         .arrows {
             position: absolute;
-            top: 18%;
-            left: 45%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
             width: 200px;
             height: 80px;
         }
         
         .home-1{
             position: absolute;
-            left: 50%;
-            top: 18%;
-        }
-        
-        .patch{
-            position: absolute;
-            left: 45%;
-            top: 23%;
-        }
-        
-        .shop{
-            position: absolute;
+            transform: translate(-50%, -50%);
             left: 50%;
             top: 28%;
         }
         
+        .patch{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 42%;
+            top: 50%;
+        }
+        
+        .shop{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 72%;
+        }
+        
         .sign-in{
             position: absolute;
-            left: 55%;
-            top: 23%;
+            transform: translate(-50%, -50%);
+            left: 58%;
+            top: 50%;
         }
 
         a {
@@ -245,50 +254,59 @@
     width: auto;
     height: 20vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to left, #13690e8a, #e438a5f2);
 
     .animated-h1 {
-        width: auto;
+        width: 800px;
         height: 120px;
+        position: relative;
         
         .archer {
             position: absolute;
-            left: 60%;
-            top: 145%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 70%;
             width: 90px;
             height: 80px;
         }
         
         .arrows {
             position: absolute;
-            top: 145%;
-            left: 45%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
             width: 200px;
             height: 80px;
         }
         
         .home-1{
             position: absolute;
+            transform: translate(-50%, -50%);
             left: 50%;
-            top: 145%;
+            top: 28%;
         }
         
         .patch{
             position: absolute;
-            left: 45%;
-            top: 150%;
+            transform: translate(-50%, -50%);
+            left: 42%;
+            top: 50%;
         }
         
         .shop{
             position: absolute;
+            transform: translate(-50%, -50%);
             left: 50%;
-            top: 155%;
+            top: 72%;
         }
         
         .sign-in{
             position: absolute;
-            left: 55%;
-            top: 150%;
+            transform: translate(-50%, -50%);
+            left: 58%;
+            top: 50%;
         }
 
         a {

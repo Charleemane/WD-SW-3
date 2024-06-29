@@ -118,3 +118,7 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 | Style Input fields with CSS | reference style for input fields | https://www.youtube.com/watch?v=3AK3vspZvvM |
+| How to center an absolutely positioned element inside its parent | reference code | https://www.educative.io/answers/how-to-center-an-absolutely-positioned-element-inside-its-parent |
+| PNGWING | png | https://www.pngwing.com |
+| Stickpng | png | https://www.stickpng.com |
+| Making a div vertically scrollable using css | scroll wheel | https://www.geeksforgeeks.org/making-a-div-vertically-scrollable-using-css/ |
