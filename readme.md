@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/Charleemane/">
+  <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="https://i.redd.it/h0xv984p44441.png" alt="coc" width="130" height="100">
   </a>
@@ -59,17 +59,18 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-This seatwork is about headers and footers, it contains a landing page that navigates to the header and footer gallery.
-
-landing page
--> header gallery
--> footer gallery
-home -> landing page
+Guiding Question:
+- What is the project
+- Whats the purpose
+- What are key components
+- What technology used and how it is used
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website
+- MultiPage Website/Single Page Website
+- Parallax transition
+- Transactional
 
 ### Technology
 <!-- TODO: List of Technology Used -->
