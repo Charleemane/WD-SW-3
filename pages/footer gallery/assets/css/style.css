@@ -28,6 +28,7 @@
     font-size: 21pt;
     font-weight: 700;
     color: white;
+    margin-bottom: 2rem
 }
 
 .animated-footers{
@@ -36,6 +37,7 @@
     font-size: 21pt;
     font-weight: 700;
     color: white;
+    margin-bottom: 2rem;
 }
 
 .footer-container-1 {
@@ -98,7 +100,7 @@
     a {
         text-decoration: none;
     }
-    
+
     .static-f2 {
         display: flex;
         justify-content: flex-start;
@@ -110,7 +112,7 @@
         padding-left: 8rem;
         padding-right: 5rem;
         position: relative;
-        
+
         .socials {
             color: #343434;
         }
@@ -306,11 +308,11 @@
                 }
             }
 
-            
+
             .right-2 {
                 width: 250px;
                 height: 250px;
-                
+
                 p{
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     font-weight: 700;
@@ -354,12 +356,8 @@
         padding: 1rem;
         width: 1200px;
 
-        &:not(:hover){
-            background-color: #343434;
-            transform: translateY(4px);
-            filter: drop-shadow(5px 5px 10px #000000);
-        }
-        
+        animation: animate 2s infinite;
+
         .scroll {
             width: 1000px;
             height: 70px;
@@ -373,7 +371,7 @@
             color: #f2f2f2;
             opacity: 0.5;
         }
-        
+
         img {
             width: 200px;
             height: 100px;
@@ -404,7 +402,7 @@
     a {
         text-decoration: none;
     }
-    
+
     .animated-f2 {
         display: flex;
         justify-content: flex-start;
@@ -416,12 +414,7 @@
         padding-left: 8rem;
         padding-right: 5rem;
         position: relative;
-        opacity: 0.2;
 
-        &:hover {
-            opacity: 1;
-        }
-        
         .socials {
             color: #343434;
         }
@@ -442,11 +435,28 @@
         }
 
         .copyright {
-            padding-left: 8rem;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
             p {
+                opacity: 0;
+                position: absolute;
                 font-size: 11px;
                 color: #343434;
+                animation: display 6s linear infinite;
             }
+
+            p:nth-child(2) {
+                animation-delay: 2s;
+            }
+            p:nth-child(3) {
+                animation-delay: 4s;
+              }
         }
     }
 }
@@ -486,24 +496,31 @@
             align-items: center;
             gap: 1rem;
 
-            &:not(:hover) {
+            animation: push-aside 8s linear infinite;
+
+            &:hover {
+                animation-play-state: paused;
                 .other-games {
-                    opacity: 0.2;
+                    opacity: 1;
+                    animation-play-state: paused;
                 }
             }
 
             .other-games {
-                font-size: 24px;
+                opacity: 0.2;
+                font-size: 18pt;
                 color: silver;
                 transition: 1s ease;
+
+                animation: vanish 8s linear infinite;
             }
-            
+
             .divider {
                 background-color: #383838;
                 width: 0.5px;
                 height: 50px;
             }
-            
+
             .games {
                 width: 90px;
                 height: 70px;
@@ -522,7 +539,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .animated-f4 {
         display: flex;
         justify-content: flex-start;
@@ -537,6 +554,8 @@
         &:not(:hover) {
             .right-1 {
                 background-color: rgb(40, 40, 40);
+                animation-play-state: paused;
+                opacity: 0;
             }
         }
 
@@ -551,25 +570,19 @@
             color: #aaaaaa;
         }
 
-        .section {
+        .support {
             display: flex;
-            padding-top: 5rem;
         }
 
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            z-index: 2;
 
             li {
                 color:#aaaaaa;
                 padding: 5px;
-                transition: 0.5s ease;
-
-                &:hover {
-                    transform: translateX(2px);
-                    font-weight: 700;
-                }
             }
           }
 
@@ -584,8 +597,10 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              transition: 0.5s ease-in-out;
               border-radius: 2px;
+              transition: 0.5s ease;
+
+              animation: expand 8s linear infinite;
 
               img {
                 width: 150px;
@@ -612,11 +627,11 @@
         background-color: rgb(6, 89, 152);
         border-radius: 10px;
         transition: 0.5s ease;
-        
+
         &:not(:hover) {
             background-color: #f2f2f2;
         }
-        
+
         .layer {
             background-color: rgb(6, 89, 152);
             width: 600px;
@@ -637,18 +652,18 @@
                 outline-style:double;
                 outline-color: rgba(0, 69, 121, 0.9);
             }
-            
+
             .img-container {
                 position: absolute;
                 transform: translate(-50%, -50%);
                 top: 50%;
                 left: 7%;
-                
+
                 img {
                     width: 200px;
                     height: 250px;
                 }
-                
+
                 .shadow {
                     background-color: rgba(64, 64, 64, 0.367);
                     position: absolute;
@@ -662,11 +677,10 @@
                 }
             }
 
-            
             .right-2 {
                 width: 250px;
                 height: 250px;
-                
+
                 p{
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     font-weight: 700;
@@ -691,6 +705,7 @@
                 font-weight: 700;
                 transition: 0.5s ease;
                 box-shadow: 0px 5px 0px 0px #3c3c3c;
+                cursor: pointer;
 
                 &:hover {
                     background-color: rgb(0, 0, 0);
@@ -705,3 +720,98 @@
     }
 }
 
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+        background-color: rgb(40, 40, 40);
+    } 50% {
+        background-color: #343434;
+        transform: translateY(2px);
+        filter: drop-shadow(5px 5px 10px #000000);
+    } 100% {
+        transform: translateY(0);
+        background-color: rgb(40, 40, 40);
+        filter: none;
+    }
+}
+
+@keyframes push-aside {
+    0% {
+        gap: 1rem;
+        padding-right: 0;
+    } 25% {
+        gap: 1rem;
+        padding-right: 0;
+    } 50% {
+        gap: 3rem;
+        padding-right: 2rem;
+    } 75% {
+        gap: 3rem;
+        padding-right: 2rem;
+    } 100% {
+        gap: 1rem;
+        padding-right: 0;
+    }
+}
+
+@keyframes vanish {
+    0% {
+        font-size: 18pt;
+    } 25% {
+        font-size: 18pt;
+    } 50% {
+        font-size: 0pt;
+    } 75% {
+        font-size: 0;
+    } 100%  {
+        font-size: 18pt;
+    }
+}
+
+@keyframes display {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes expand {
+    0% {
+        width: 25%;
+        left: 77%;
+        background-color: #f2f2f29f;
+    } 25% {
+        width: 25%;
+        left: 77%;
+        background-color: #f2f2f29f;
+    }
+    50% {
+        left: 50%;
+        width: 90%;
+        background-color: #1f1f1f9f;
+    } 75% {
+        left: 50%;
+        width: 90%;
+        background-color: #1f1f1f9f;
+    } 100% {
+        width: 25%;
+        left: 77%;
+        background-color: #f2f2f29f;
+    }
+  }

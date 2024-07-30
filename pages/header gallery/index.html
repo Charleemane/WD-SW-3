@@ -12,6 +12,10 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
+
+    <script src="./assets/js/scripts.js">
+
+    </script>
 </head>
 <body>
     <div class="static-header-gallery">
@@ -27,7 +31,9 @@
                     <a href="">Home</a>
                     <a href="">About</a>
                     <div class="dropdown">
-                        <a href="" class="shop">Shop</a>
+                        <div class="dropdown-button">
+                            <button class="shop"><span>Shop </span></button>
+                        </div>
                         <div class="dropdown-content">
                             <a href="">Gems</a>
                             <a href="">Merch</a>
@@ -35,7 +41,7 @@
                         </div>
                     </div>
                     <a href="">Contact</a>
-                    <button>Sign-in</button>
+                    <button class="sign-in">Sign-in</button>
                 </div>
             </div>
         </div>
@@ -82,9 +88,6 @@
             </div>
         </div>
         <div class="header-container-4">
-            <div class="sword-container">
-                <img src="./assets/img/stickpng_coc-sword.png" alt="">
-            </div>
             <div class="static-h4">
                 <a href="" class="buttons-3">Home</a>
                 <a href="" class="buttons-3">Patch</a>
@@ -116,17 +119,27 @@
     <section class="animated-headers">Animated Headers</section>
     <div class="animated-header-gallery">
         <div class="header-container-6">
-            <div class="row-1">
-                <h1>CLASH OF CLANS</h1>
-                <p>Play Now</p>
-            </div>
             <div class="animated-h1">
-                <a href=""><i class="bi bi-search"></i></a>
-                <input type="search" name="search" id="search-for" placeholder="Search...">
-                <img src="./assets/img/58eeb0c0ee9418469d17edf1.png" alt="" class="archer">
+                <div class="column-1">
+                    <h3>CLASH OF CLANS</h3>
+                    <img src="./assets/img/58eeb0c0ee9418469d17edf1.png" alt="" class="archer">
+                </div>
+                <div class="column-2">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <div class="dropdown">
+                        <button class="shop"><span>Shop </span></button>
+                        <div class="dropdown-content">
+                            <a href="">Gems</a>
+                            <a href="">Merch</a>
+                            <a href="">Sale</a>
+                        </div>
+                    </div>
+                    <a href="">Contact</a>
+                    <button class="sign-in">Sign-in</button>
+                </div>
             </div>
         </div>
-            </div>
         <div class="header-container-7">
             <div class="row-1">
                 <div class="left">
@@ -167,12 +180,9 @@
             <a href="" class="buttons-2">Patch</a>
             <a href="" class="buttons-2">Shop</a>
             <a href="" class="buttons-2">Sign-in</a>
-            </div>
+        </div>
         </div>
         <div class="header-container-9">
-                <div class="sword-container">
-                    <img src="./assets/img/stickpng_coc-sword.png" alt="">
-                </div>
                 <div class="animated-h4">
                     <a href="" class="buttons-3">Home</a>
                     <a href="" class="buttons-3">Patch</a>
@@ -186,7 +196,7 @@
                         <input type="search" name="search" id="search-for" placeholder="Search">
                     </div>
                 </div>
-        </div>
+            </div>
         <div class="header-container-10">
             <div class="animated-h5">
                 <div class="left-container">
@@ -201,5 +211,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
